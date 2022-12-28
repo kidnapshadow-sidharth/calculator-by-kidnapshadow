@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+
+}
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: larger;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.16);
+}
+h1 {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-top: 20px; */
+    font-size: 50px;
+    /* background-color: rgba(0, 0, 0, 0.16); */
+    text-shadow: 5px 4px 5px rgb(127, 173, 166);
+    text-transform: capitalize;
+}
+p{
+    font-size: 30px;
+    margin-left: 18rem;
+    margin-top: 5px;
+    
+}
+
+
+.container {
+/* background-color: rgba(0, 0, 0, 0.16); */
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator {
+margin-top: 15px;
+    background-color: whitesmoke;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px white;
+    display: grid;
+    grid-template-columns: repeat(4, 63px);
+
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 250px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 12px white,
+        inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+    border: none;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+
+
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    background-color: antiquewhite;
+    box-shadow: -5px -5px 12px white, 5px 5px 12px rgba(0, 0, 0, 0.16);
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(243, 210, 171);
+
+}
+
+#equal {
+    width: 120px;
+    
+
+}
+footer{
+    margin-bottom: 15px;
+    margin-right: 8px;
+    text-align: end;
+    text-transform: capitalize;
+}
+
+@media (max-width: 574px) {
+    p{
+        margin-left: 8rem;
+    }
+    footer{
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 462px) {
+    footer{
+        margin-bottom: 30px;
+    }
+}
